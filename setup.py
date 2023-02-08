@@ -4,9 +4,9 @@ setup(
     name='wagtailcolumnblocks',
     description='Wagtail Column Blocks',
     use_scm_version=True,
-    author='Squareweave',
-    author_email='hosting+pypi@squareweave.com.au',
-    url='https://github.com/squareweave/wagtailcolumnblocks',
+    author='Tim van der Linden',
+    author_email='tim@shisaa.be',
+    url='https://github.com/timusan/wagtailcolumnblocks',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     license='BSD',
@@ -19,7 +19,9 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
-        'Framework :: Django :: 2.0',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Framework :: Django :: 3.0',
         'Topic :: Internet :: WWW/HTTP :: Site Management',
     ],
 
@@ -27,7 +29,7 @@ setup(
     include_package_data=True,
 
     install_requires=[
-        'wagtail >= 2.10',
+        'wagtail >= 4.0',
     ],
     setup_requires=[
         'setuptools_scm',
