@@ -1,7 +1,13 @@
 /* Wagtail 4.x styling */
 
-.columns-block.struct-block > .fields {
+.columns-block.struct-block>.fields {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+}
+
+/* Make sure there is enough room between columns */
+/* so to not overlap and make the buttons inaccessible. */
+.columns-block.struct-block>.fields>li {
+    margin-right: 20px;
 }
