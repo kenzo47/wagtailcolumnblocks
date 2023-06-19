@@ -8,10 +8,10 @@ from django.apps import apps
 from django.templatetags.static import static
 from django.utils.html import format_html
 
-from wagtail.core import blocks, hooks
+from wagtail.blocks import StructBlock
+from wagtail.hooks import register
 
-
-@hooks.register('insert_editor_css')
+@register('insert_editor_css')
 def editor_css():
     return format_html(
         '<link rel="stylesheet" href="{}">',
@@ -19,7 +19,7 @@ def editor_css():
     )
 
 
-class ColumnsBlock(blocks.StructBlock):
+class ColumnsBlock(StructBlock):
     """
     A generic, reusable column block.
 
