@@ -1,1 +1,1 @@
-wagtail >= 4.0
+wagtail >= 6.0
